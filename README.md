@@ -34,15 +34,17 @@ The purpose of this assignment, is to create a working CLI app for a user to cre
 
 ## How to use this app (it is suggested to have 2 separate command line windows, as well as run an app like Insomnia)
 
-
-- Command Line - Run the command "npm run seed", which load the data base with data for testing.  
-![npm run seed](./images/Challenge 13 - npm run seed.png)
-The command line interface should successful loading the databases. 
-
 - Mysql - User needs to connect to the database in the "db/schema.sql" file, and select "ecommerce_db" as the database.  Then run the command "source db/schema.sql", then "use ecommerce_db".  This will activate the database
 
+- Command Line - Run the command "npm run seed", which load the data base with data for testing.  
+![npm run seed](https://github.com/RauchDavis13/fantastic_umbrella/blob/main/images/Challenge%2013%20-%20npm%20run%20seed.png)
+The command line interface should show that the databases were loaded successfully. 
 
+- Mysql - Run 'source db/sql.com' to activiate the tabe for the database
 
+- Command Line - Run the command "npm start", and this will initialize the routing connection from the database to the front end
+
+- In Insomnia, run a GET "http://localhost:3001/api/categories" to test categories, products or tags.  From here, the user can do POST's, PUT's or DELETE's
 
 
 ## GitHub repository...
