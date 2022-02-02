@@ -25,8 +25,7 @@ router.get('/', (req, res) => {
       },
       {
         model: ProductTag,
-        attributes: ['id']
-      }
+        }
     ]
   })
     .then(dbTagData => res.json(dbTagData))

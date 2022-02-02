@@ -6,24 +6,18 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
-  Category.findAll({
-    attributes: [
-      'id',
-      'category_name',
-      'product_id'      
-    ],
-    include: [
-      {
-        model: Product,
-        attributes: ['id',
-        'product_name',
-        'price',
-        'stock'
-        ]
-      }
-    ],
-       
+  Category.findAll().then( retCategory => {
+    if (!retCategory) {
+      res.status(404).json({ message: 'No user found with this id' });
+      return;
+    }
+    res.json(retCategory);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
   });
+
 }); 
 
 router.get('/:id', (req, res) => {
