@@ -19,13 +19,13 @@ router.get('/', (req, res) => {
         'category_id'
         ]
       },
-      {
-        model: Category,
-        attributes: ['id', 'category_name' ]
-      },
-      {
-        model: ProductTag,
-        }
+      // {
+      //   model: Category,
+      //   attributes: ['id', 'category_name' ]
+      // },
+      // {
+      //   model: ProductTag,
+      //   }
     ]
   })
     .then(dbTagData => res.json(dbTagData))
@@ -55,15 +55,15 @@ router.get('/:id', (req, res) => {
         'stock',
         'category_id'
         ]
-      },
-      {
-        model: Category,
-        attributes: ['id', 'category_name' ]
-      },
-      {
-        model: ProductTag,
-        attributes: ['id']
       }
+      // {
+      //   model: Category,
+      //   attributes: ['id', 'category_name' ]
+      // },
+      // {
+      //   model: ProductTag,
+      //   attributes: ['id']
+      // }
     ]
   })
     .then(dbTagData => {

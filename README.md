@@ -10,7 +10,7 @@ The purpose of this assignment, is to create a working CLI app for a user to cre
 
 - Problem Solved: Once the app is started from the CLI, and the database initialized, in Insomnia, the user can select api/categories products or tags, and view, create, update or deleted this data from the database.
 
-- Lessons Learned: Creating datbases notches up the level of complexity learned.  Correctly flowing the data from the databases, in conjunction with bringing in questions using inquirer has been challenging.  Having trouble correctly setting up the routes to view, add, delete or update the data.  Currently, the app is not working, however the structure has been created.
+- Lessons Learned: Creating datbases notches up the level of complexity learned.  Correctly flowing the data from the databases, in conjunction with bringing in questions using inquirer has been challenging.  I've updated the app, and fixed the ability to POST and DELETE tags, products and categories.
 
 ## Folders and Files
 
@@ -40,18 +40,89 @@ The purpose of this assignment, is to create a working CLI app for a user to cre
 ![npm run seed](https://github.com/RauchDavis13/fantastic_umbrella/blob/main/images/Challenge%2013%20-%20npm%20run%20seed.png)
 The command line interface should show that the databases were loaded successfully. 
 
-- Mysql - Run 'source db/sql.com' to activiate the tabe for the database
+- ***Mysql*** - Run 'source db/sql.com' to activiate the tabe for the database
 
-- Command Line - Run the command "npm start", and this will initialize the routing connection from the database to the front end
+- ***Run App*** - Run the command "npm start", and this will initialize the routing connection from the database to the front end
 
-- In Insomnia, run a GET "http://localhost:3001/api/categories" to test categories, products or tags.  From here, the user can do POST's, PUT's or DELETE's
+## Screen Shots
+***GET's***<br>
+GET Category
+![GET Category](/images/GET_categories.png)
 
+GET Products
+![GET Category](/images/GET_products.png)
+
+GET Tags
+![GET Tags](/images/GET_tags.png)
+
+***POST's***<br>
+POST Category
+![POST Category](/images/POST_categories.png)
+![POST Category full list](/images/POST_cagegories_with_new_category.png)
+
+POST Product
+![POST Product](/images/POST_product.png)
+![POST Product full list](/images/POST_product_POST.png)
+
+POST Tag
+![POST Tag](/images/POST_tags.png)
+![POST Tag full list](/images/POST_tags_showing_new_tag.png)
+
+***DELETE's***<br>
+
+DELETE Category
+![DELETE Category](/images/DELETE_categories_PRE.png)
+![DELETE Category post delete](/images/DELETE_categories_POST.png)
+
+DELETE Product
+![DELETE Product](/images/DELETE_products_PRE.png)
+![DELETE Product post delete](/images/DELETE_product_POST.png)
+
+DELETE Tag
+![DELETE Tag](/images/DELETE_tag_PRE.png)
+![DELETE Tag post delete](/images/DELETE_tag_POST1.png)
 
 ## GitHub repository...
 https://github.com/RauchDavis13/fantastic_umbrella.git
 
-## Video
-https://watch.screencastify.com/v/xJI7vgM2f1isjfx218Lh
+## Videos
+Initialize DATABASE
+https://drive.google.com/file/d/1Vebgn8RbV9w3Z59k48eMFE33Xs-CbL99/view
+
+Initialize SERVER
+https://drive.google.com/file/d/11s412rRAZAGlKh25NO8sb4pcsrnmOtVg/view
+
+GET Categories
+https://drive.google.com/file/d/11s412rRAZAGlKh25NO8sb4pcsrnmOtVg/view
+
+POST Categories
+https://drive.google.com/file/d/16GQzEf3dDuZXIGjf_6zPQItFx8xsToyI/view
+
+DELETE Categories
+https://drive.google.com/file/d/1w82G2_mqMfpbVg7qg2eY_iuknZ2rqDsB/view
+
+GET Products
+https://drive.google.com/file/d/1SFnaBC_rvMmYO-gkIb0FraCp9Na_m3cG/view
+
+POST Product
+https://drive.google.com/file/d/1QT6Zb-qg8AOHugioJkYweagOybs6nEZh/view
+
+DELETE Product
+https://drive.google.com/file/d/18OQGVK4vmpYXpKaum1wOo_1SxZ_UbJbQ/view
+
+GET Tag
+https://drive.google.com/file/d/1fLtLDmhAGpPrdcEnZgMxRqJBNpYtWLni/view
+
+POST Tag
+https://drive.google.com/file/d/1cLbLRwnUtNfvhVU_DmLjHLGA8Zo57rQV/view
+
+DELETE Tag
+https://drive.google.com/file/d/1oatNcKSx5PymVdA3LcYUw8LH155miQCg/view
+
+
+
+
+
 
 
 ## Thank you's
